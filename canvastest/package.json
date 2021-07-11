@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
+    "serve": "hs ./build",
+    "build": "browserify script.js -o ./build/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Param Siddharth <contact@paramsid.com> (http://www.paramsid.com/)",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^17.0.0",
     "canvas": "^2.8.0",
-    "fs-extra": "^10.0.0"
+    "downloadjs": "^1.4.7",
+    "fs-extra": "^10.0.0",
+    "http-server": "^0.12.3"
   }
 }

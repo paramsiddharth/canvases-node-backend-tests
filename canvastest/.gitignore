@@ -1,2 +1,4 @@
 node_modules/
 *debug.log
+build/*
+!build/index.html
